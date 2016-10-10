@@ -1,5 +1,9 @@
 /*
-we cann add up all the strings and compare their total sum, if equal, they are the same
+1.we cann add up all the strings and compare their total sum, if equal, they are the same
+
+other method:
+2. can sort both of them and compare
+3. can use a hash table
 */
 
 #include <iostream>
