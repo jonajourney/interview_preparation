@@ -25,6 +25,9 @@ explain:
 1. https://discuss.leetcode.com/topic/30520/explanation-of-why-those-posted-algorithms-are-mathematically-valid
 2. https://discuss.leetcode.com/topic/42746/all-you-need-to-know-about-testing-happy-number
 
+other resources:
+https://discuss.leetcode.com/topic/38728/0ms-c-solution-beats-97-4-perhaps-the-most-easy-one-to-understand
+
 */
 
 #include <iostream>
