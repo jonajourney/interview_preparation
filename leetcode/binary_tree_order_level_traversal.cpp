@@ -54,24 +54,25 @@ public:
       q.push(NULL);
       vector<int> temp; //this is to create a "new" vector inside the vector when reach a new level
       while(!q.empty()){
-        ListNode* t= q.front();
+        TreeNode* t= q.front();
         q.pop();
         if(t==NULL){
-          //create a new vector inside the storage vector;
+          //push in storage vector and create a new vector inside the storage vector;
           storage.push_back(temp);
           temp.resize(0);
           if(q.size()>0){
-            q.push_back(NULL);
+            q.push(NULL);
           }
         }
-      }
-      else{
-        temp.push_back(t->val);
-        if(t->left) q.push_back(t->left);
-        if(t->right)q.push_back(t->right);
+        else{
+          temp.push_back(t->val);
+          if(t->left) q.push(t->left);
+          if(t->right)q.push(t->right);
+        }
       }
 
-      return result;
+
+      return storage;
     }
 
 };
